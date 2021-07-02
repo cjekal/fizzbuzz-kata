@@ -33,4 +33,10 @@ class DemoApplicationTests {
 		assertThat(fizzBuzzService.getWord(11)).isEqualTo("11");
 	}
 
+	@Test
+	void GetsFizzBuzzWhenDivisibleByBoth3And5() {
+		assertThat(fizzBuzzService.getWord(15)).isEqualTo("fizzbuzz");
+		assertThat(fizzBuzzService.getWord(30)).isEqualTo("fizzbuzz");
+		assertThat(fizzBuzzService.getWord(90)).isEqualTo("fizzbuzz");
+	}
 }
