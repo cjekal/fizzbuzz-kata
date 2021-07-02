@@ -5,6 +5,13 @@ import org.springframework.stereotype.Service;
 @Service
 public class FizzBuzzService {
     public String getWord(int number) {
-        return "fizz";
+        if (number % 3 == 0) {
+            return "fizz";
+        }
+        if (number % 5 == 0) {
+            return "buzz";
+        }
+
+        return null;
     }
 }

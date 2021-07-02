@@ -19,4 +19,11 @@ class DemoApplicationTests {
 		assertThat(fizzBuzzService.getWord(12)).isEqualTo("fizz");
 	}
 
+	@Test
+	void GetsBuzzIfDivisibleBy5() {
+		assertThat(fizzBuzzService.getWord(5)).isEqualTo("buzz");
+		assertThat(fizzBuzzService.getWord(10)).isEqualTo("buzz");
+		assertThat(fizzBuzzService.getWord(20)).isEqualTo("buzz");
+	}
+
 }
