@@ -12,6 +12,6 @@ public class FizzBuzzService {
             return "buzz";
         }
 
-        return null;
+        return Integer.toString(number);
     }
 }

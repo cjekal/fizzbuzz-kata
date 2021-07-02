@@ -26,4 +26,11 @@ class DemoApplicationTests {
 		assertThat(fizzBuzzService.getWord(20)).isEqualTo("buzz");
 	}
 
+	@Test
+	void GetsItselfWhenNeitherDivisibleBy3Nor5() {
+		assertThat(fizzBuzzService.getWord(1)).isEqualTo("1");
+		assertThat(fizzBuzzService.getWord(4)).isEqualTo("4");
+		assertThat(fizzBuzzService.getWord(11)).isEqualTo("11");
+	}
+
 }
